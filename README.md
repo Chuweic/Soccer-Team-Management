@@ -9,16 +9,59 @@ This program is designed to help the coach to manage a soccer team by allowing u
 - Exit the program
 
 ## 3. How To Run. 
-- To run the file, open the project in Intellij, navigate to the res/ directory which contains the jar file. then, run the JAR file.
+- To run the file, open the project in Intellij, navigate to the res/ directory which contains the jar file called "soccer club.jar". Then, run the following command:
+```sh
+- java -jar soccer\ club.jar 
+```
 - No arguments are required to run the file.
+- After running with the command, you will see window below pops up, which means you start the JAR file successfully.
+<img width="1259" alt="Screen Shot 2023-04-20 at 7 34 43 PM" src="https://user-images.githubusercontent.com/122242630/233527243-114d45bd-88a2-4397-97a6-74c9ad5a47b1.png">
+
 
 ## How to Use the Program. 
-Instructions on how to use functionality in your program. if interactive, how to interact with your program? Pay particular attention to the parts that are not part of the example runs that you provided.
+1. once the window pops up, users can starts to enter candidates information into the text field. 
+2. Users are able to type in first name, lase name, and date of birth in "YYYY-MM-DD" format. Pasting text from clipbord is not supported. Prefered position and skill level can be selected from drop down menu.
+3. After entered all information of a player, click on the "Add candidate" button to add this player as candidate. Player's information will be stored and listed below.
+<img width="1259" alt="Screen Shot 2023-04-20 at 8 25 57 PM" src="https://user-images.githubusercontent.com/122242630/233533818-f484efe5-19e7-41e7-b2ce-57a9a71401d6.png">
+4. Keep adding candidate by repeating step 2 - 3.
+5. If the date of birther indicates the player is older than 10 years ole, an error message will pop up.
+
+<img width="1147" alt="Screen Shot 2023-04-20 at 8 30 20 PM" src="https://user-images.githubusercontent.com/122242630/233534358-18250262-dfb9-4fa5-94a4-fb2b34b0d1c1.png">
+
+6. If incorrect date format or invalid date is entered in the date of birth text field, an error message will pop up.
+
+<img width="1147" alt="Screen Shot 2023-04-20 at 8 33 29 PM" src="https://user-images.githubusercontent.com/122242630/233534741-e79a125f-20dc-4f3d-8b0c-a5c7efa4d6a1.png">
+
+7. Text on the top will indicate the number of candidates that user entered.
+
+8. When there are more than or equal to 10 players are added, users can choose to start create team by clicking on the "Create team" button. Top text will indicate "team create successfully".
+9. An error message will pop up if user click on create team with les than 10 player are added.
+
+<img width="1143" alt="Screen Shot 2023-04-20 at 8 39 00 PM" src="https://user-images.githubusercontent.com/122242630/233535360-fd244a91-8023-443d-a6b5-0b73152c2049.png">
+
+10. After creating the team, user is able to choose to see all team players by clicking on the "Display All Team Players" button, or players who are selected in the starting line up.
+<img width="1259" alt="Screen Shot 2023-04-20 at 8 44 11 PM" src="https://user-images.githubusercontent.com/122242630/233535957-1fb33c34-07cc-41d6-a55f-5217e0608870.png">
+
+<img width="1259" alt="Screen Shot 2023-04-20 at 8 45 57 PM" src="https://user-images.githubusercontent.com/122242630/233536186-724eeefd-4a24-4287-ae61-b7527cb12877.png">
+
+12. Select Exit button, or close the window to exit the program.
 
 ## Design/Model Changes. 
-It is important to document what changes that you have made from earlier designs. Why were those changes required? You can write these changes in terms of version if you wish.
+Several changes on CreateTeamModel class compared to project part 1:
+1. Moved the isTeamCreated check from getTeamList() method to contructTeam() method, and removed two checks isJerseyAssign and isPositionAssigned in constructor and their application in metholds assignPosition() and assignJersey(). In the original design, there are three checks in three methods to ensure the team will not be re-created. By moving the check to contructTeam() method, one check is enough to get work done.
+2. Added 7 Constants in the model constructor to define the team size and numbers of players in each type of position. Constant makes the program easier to be modified if the club decided to construt team with more or less number of players in a team or in starting line up.
+3. UML has been updated to reflect above changes.
+
 
 ## Assumptions. 
-List what assumptions you made during program development and implementation. Be sure that these do not conflict with the requirements of the project.
+- All players should under 10 years old.
+- Team has at least 10 players.
+- Team has 20 players at most. If there are more than 20 candidates, candidates will be sorted by skill level from high to low and only top 20 will be selected into the team.
+- Team will be created only one time. Once team has been created, the coach is not able to add other candidates.
+- Candidates are selected to the team purely by skill level. 5 is the highest level and 1 is the lowest level.
+- jersey number is assigned randomly to team players, can not be modified/changed.
+- Players are selected to starting line up purely by skill level.
+- Positions are assigned based on player's perferred position. when preferred position is full, plyers will be randomly assign to rest positions.
 
 ## Citations. 
+there is no citations in this program.
