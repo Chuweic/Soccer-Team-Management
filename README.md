@@ -72,4 +72,4 @@ Several changes on CreateTeamModel class compared to project part 1:
 - Positions are assigned based on player's perferred position. when preferred position is full, plyers will be randomly assign to rest positions.
 
 ## Citations. 
-there is no citations in this program.
+There is no citations in this program.
