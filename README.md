@@ -23,28 +23,31 @@ This program is designed to help the coach to manage a soccer team by allowing u
 2. Users are able to type in first name, lase name, and date of birth in "YYYY-MM-DD" format. Pasting text from clipbord is not supported. Prefered position and skill level can be selected from drop down menu.
 3. After entered all information of a player, click on the "Add candidate" button to add this player as candidate. Player's information will be stored and listed below.
 <img width="1259" alt="Screen Shot 2023-04-20 at 8 25 57 PM" src="https://user-images.githubusercontent.com/122242630/233533818-f484efe5-19e7-41e7-b2ce-57a9a71401d6.png">
+
 4. Keep adding candidate by repeating step 2 - 3.
-5. If the date of birther indicates the player is older than 10 years ole, an error message will pop up.
+5. Text on the top will indicate the number of candidates that user entered.
+6. When there are more than or equal to 10 players are added, users can choose to start create team by clicking on the "Create team" button. Top text will indicate "team create successfully".
 
-<img width="1147" alt="Screen Shot 2023-04-20 at 8 30 20 PM" src="https://user-images.githubusercontent.com/122242630/233534358-18250262-dfb9-4fa5-94a4-fb2b34b0d1c1.png">
-
-6. If incorrect date format or invalid date is entered in the date of birth text field, an error message will pop up.
-
-<img width="1147" alt="Screen Shot 2023-04-20 at 8 33 29 PM" src="https://user-images.githubusercontent.com/122242630/233534741-e79a125f-20dc-4f3d-8b0c-a5c7efa4d6a1.png">
-
-7. Text on the top will indicate the number of candidates that user entered.
-
-8. When there are more than or equal to 10 players are added, users can choose to start create team by clicking on the "Create team" button. Top text will indicate "team create successfully".
-9. An error message will pop up if user click on create team with les than 10 player are added.
-
-<img width="1143" alt="Screen Shot 2023-04-20 at 8 39 00 PM" src="https://user-images.githubusercontent.com/122242630/233535360-fd244a91-8023-443d-a6b5-0b73152c2049.png">
-
-10. After creating the team, user is able to choose to see all team players by clicking on the "Display All Team Players" button, or players who are selected in the starting line up.
+7. After creating the team, user is able to choose to see all team players by clicking on the "Display All Team Players" button, or players who are selected in the starting line up.
 <img width="1259" alt="Screen Shot 2023-04-20 at 8 44 11 PM" src="https://user-images.githubusercontent.com/122242630/233535957-1fb33c34-07cc-41d6-a55f-5217e0608870.png">
 
 <img width="1259" alt="Screen Shot 2023-04-20 at 8 45 57 PM" src="https://user-images.githubusercontent.com/122242630/233536186-724eeefd-4a24-4287-ae61-b7527cb12877.png">
 
-12. Select Exit button, or close the window to exit the program.
+8. Select Exit button, or close the window to exit the program.
+
+Error Message will pop up in the following situation:
+1. If the date of birther indicates the player is older than 10 years ole, an error message will pop up.
+
+<img width="1147" alt="Screen Shot 2023-04-20 at 8 30 20 PM" src="https://user-images.githubusercontent.com/122242630/233534358-18250262-dfb9-4fa5-94a4-fb2b34b0d1c1.png">
+
+2. If incorrect date format or invalid date is entered in the date of birth text field, an error message will pop up.
+
+<img width="1147" alt="Screen Shot 2023-04-20 at 8 33 29 PM" src="https://user-images.githubusercontent.com/122242630/233534741-e79a125f-20dc-4f3d-8b0c-a5c7efa4d6a1.png">
+
+3. An error message will pop up if user click on create team with les than 10 player are added.
+
+<img width="1143" alt="Screen Shot 2023-04-20 at 8 39 00 PM" src="https://user-images.githubusercontent.com/122242630/233535360-fd244a91-8023-443d-a6b5-0b73152c2049.png">
+
 
 ## Design/Model Changes. 
 Several changes on CreateTeamModel class compared to project part 1:
