@@ -1,0 +1,30 @@
+All players in the team:
+Chuwei24, DFour, 1
+Chuwei8, Eight, 2
+Chuwei18, Eighteen, 18
+Chuwei11, Eleven, 16
+Chuwei15, Fifteen, 5
+Chuwei5, Five, 4
+Chuwei4, Four, 19
+Chuwei14, Fourteen, 6
+Chuwei9, Nine, 14
+Chuwei19, Nineteen, 20
+Chuwei1, One, 17
+Chuwei7, Seven, 10
+Chuwei17, Seventeen, 15
+Chuwei6, Six, 3
+Chuwei16, Sixteen, 8
+Chuwei10, Ten, 13
+Chuwei13, Thirteen, 7
+Chuwei3, Three, 12
+Chuwei12, Twelve, 9
+Chuwei2, Two, 11
+
+Starting line up:
+Chuwei1, One, 17, Goalie
+Chuwei4, Four, 19, Defender
+Chuwei3, Three, 12, Defender
+Chuwei11, Eleven, 16, Midfield
+Chuwei7, Seven, 10, Midfield
+Chuwei2, Two, 11, Midfield
+Chuwei15, Fifteen, 5, Forward
